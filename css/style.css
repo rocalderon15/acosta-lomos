@@ -1,16 +1,29 @@
+
 * {
-    margin: 0;
+    margin: 1;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: Arial, sans-serif;
     color: #1a1919;
     line-height: 1.6;
     background-color: #fc8804;
-    animation: fadeIn 1s ease-in-out; 
+    animation: fadeIn 1s ease-in-out;
 }
+
+
+.logo {
+    max-width: 230px;
+    position: relative;
+    top: -20px; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+
 
 @keyframes fadeIn {
     from {
@@ -19,14 +32,6 @@ body {
     to {
         opacity: 1;
     }
-}
-
-header {
-    background-color: #1f1e1e;
-    color: #fff;
-    padding: 100px;
-    text-align: center;
-    animation: slideDown 0.8s ease-out; 
 }
 
 @keyframes slideDown {
@@ -40,15 +45,49 @@ header {
     }
 }
 
-img {
-    max-width: 300px; 
-    display: block;
-    margin: 0 auto 70px;
-    transition: transform 0.3s ease; 
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-img:hover {
-    transform: scale(1.05);
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+header {
+    background-color: #1f1e1e;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+    animation: slideDown 0.8s ease-out;
+}
+
+
+nav {
+    margin-top: 30px; 
 }
 
 nav ul {
@@ -73,19 +112,12 @@ nav ul li a:hover {
     color: #ffa500;
 }
 
+
 main {
     padding: 30px;
-    animation: fadeInContent 1s ease-in-out; 
+    animation: fadeInContent 1s ease-in-out;
 }
 
-@keyframes fadeInContent {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 .intro {
     max-width: 800px;
@@ -93,9 +125,19 @@ main {
     text-align: center;
 }
 
+.intro img {
+    height: 400px;
+    width: 900px;
+}
+
+.intro p {
+    text-align: justify;
+    animation: slideUp 0.8s ease-in;
+}
+
 .featured-image {
-    width: 80%; 
-    max-width: 500px; 
+    width: 80%;
+    max-width: 500px;
     margin: 20px auto;
     display: block;
     border-radius: 10px;
@@ -104,29 +146,33 @@ main {
 
 .featured-image:hover {
     transform: scale(1.05);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.intro p {
-    text-align: justify;
-    animation: slideUp 0.8s ease-in; 
+
+img {
+    max-width: 300px;
+    transition: transform 0.3s ease;
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.imagenes-contenedor {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
 }
 
-.intro img {
-    height: 400px;
-    width: 900px;
+.imagenes-contenedor img {
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
+
+img:hover {
+    transform: scale(1.05);
+}
+
 
 .footer {
     background-color: #333;
@@ -134,20 +180,14 @@ main {
     padding: 20px 0;
     text-align: center;
     font-size: 0.9em;
-    animation: fadeInFooter 1.2s ease-in-out; 
+    animation: fadeInFooter 1.2s ease-in-out;
 }
 
-
-@keyframes fadeInFooter {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.text {
+    font-size: 0.8em;
+    margin-top: 10px;
 }
+
 
 .social-icon {
     list-style: none;
@@ -167,8 +207,9 @@ main {
 
 .icon-elem a:hover {
     color: #ffa500;
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
+
 
 .menu {
     list-style: none;
@@ -182,23 +223,92 @@ main {
 .menu-elem a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s, transform 0.3s ease; 
+    transition: color 0.3s, transform 0.3s ease;
 }
 
 .menu-elem a:hover {
     color: #ffa500;
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
-.text {
-    font-size: 0.8em;
-    margin-top: 10px;
+
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-img lomos {
-    width: 900px;
-    height: 700px; 
+.map-iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+
+.pedido {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pedido h1 {
+    font-size: 24px;
+    color: #f04e23;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pedido p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pedido-form label {
     display: block;
-    margin: 0 auto 70px;
-    transition: transform 0.6s ease; 
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
 }
+
+.pedido-form input,
+.pedido-form textarea,
+.pedido-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pedido-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.pedido-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #f04e23;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pedido-form button:hover {
+    background-color: #d03e1a;
+}
+

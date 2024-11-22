@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido - Acosta Lomos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../multimedia/logodos.png" alt="logo de Acosta Lomos" class="logo">
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nuestros productos.html">Nuestros productos</a></li>
+                <li><a href="./nuestra carta.html">Nuestra carta</a></li>
+                <li><a href="./donde nos encontramos.html">Dónde nos encontramos</a></li>
+                <li><a href="./realizar pedido.html" class="active">Realizar pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="pedido">
+            <h1>Realiza pedido</h1>
+            <p>Completa el siguiente formulario para realizar tu pedido:</p>
+            <form class="pedido-form" action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Telefono de contacto" required>
+                
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="A dónde lo queres enviar" required>
+                
+                <label for="pedido">Detalla lo que queres pedir:</label>
+                <textarea id="pedido" name="pedido" placeholder="Detalle del pedido" required></textarea>
+                
+                <label for="metodo-pago">Método de Pago:</label>
+                <select id="metodo-pago" name="metodo-pago" required>
+                    <option value="" disabled selected>Selecciona un método</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="transferencia">Transferencia</option>
+                </select>
+                
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="https://www.instagram.com/acostalomos" class="icon">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="https://www.facebook.com/lomos.acosta" class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            
+        </ul>
+        <p class="text">Acosta Lomos</p>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
