@@ -1,113 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestra Carta - Acosta Lomos</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Carta — Acosta Lomos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
-    <header>
-        <img src="../multimedia/logodos.png" alt="logo de Acosta Lomos" class="logo">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nuestros productos.html">Nuestros Productos</a></li>
-                <li><a href="./nuestra carta.html">Nuestra Carta</a></li>
-                <li><a href="./donde nos encontramos.html">Dónde nos encontramos</a></li>
-                <li><a href="./realizar pedido.html">Realizar Pedido</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    
-    <main>
-        <h1>Nuestra Carta</h1>
-        <p>Explora nuestro menú y encuentra una variedad de lomitos, bebidas y acompañamientos preparados con los mejores ingredientes.</p>
+  <header class="navbar">
+    <a href="../index.html" class="logo">Acosta<span>Lomos</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./nuestros productos.html">Productos</a></li>
+        <li><a href="./nuestra carta.html" class="active">Nuestra carta</a></li>
+        <li><a href="./donde nos encontramos.html">Dónde estamos</a></li>
+      </ul>
+    </nav>
+    <a href="./realizar pedido.html" class="btn-pedido">Hacer pedido</a>
+    <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+  </header>
 
-        
-        <section class="categoria">
-            <h2>Lomitos</h2>
-            <div class="item">
-                <h3>Lomito Simple</h3>
-                <span class="precio">$10300</span>
-            </div>
-            <div class="item">
-                <h3>Lomito Completo</h3>
-                
-                <span class="precio">$10400</span>
-            </div>
-            <div class="item">
-                <h3>Lomito de Pollo</h3>
-                
-                <span class="precio">$9700</span>
-            </div>
-            <div class="item">
-                <h3>Lomito de Cerdo</h3>
-                
-                <span class="precio">$9700</span>
-            </div>
-            <div class="item">
-                <h3>Lomito Vegano</h3>
-                
-                <span class="precio">$8500</span>
-            </div>
-                <div class="item">
-                    <h3>Lomito SUPER</h3>
-                    
-                    <span class="precio">$11400</span>
-                </div>
-                <div class="item">
-                    <h3>Lomo Acosta</h3>
-                    
-                    <span class="precio">$12400</span>
-                </div>
-        </section>
+  <main>
 
-        
-        <section class="categoria">
-            <h2>PROMOCIONES</h2>
-            <div class="item">
-                <h3>2 lomos de cerdo</h3>
-                <span class="precio">$17400</span>
-            </div>
-            <div class="item">
-                <h3>2 lomos de ternera + 1 gaseosa</h3>
-                <span class="precio">$21800</span>
-            </div>
-            <div class="item">
-                <h3>2 hamburguesas completas</h3>
-                <p>solo de lunes a miercoles</p>
-                <span class="precio">$11500</span>
-            </div>
-        </section>
-        <div class="imagenes-contenedor">
-            <img src="../multimedia/lomostres.jpg" alt="Lomos">
-            <img src="../multimedia/burgers.jpg" alt="hamburguesas">
-    
+    <!-- PAGE HEADER -->
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <span class="tag">✦ Menú completo</span>
+        <h1>Nuestra<br><span class="accent">Carta</span></h1>
+        <p class="hero-desc">Lomitos, hamburguesas y promociones. Todo preparado con los mejores ingredientes.</p>
+      </div>
+      <div class="page-hero-deco">
+        <span class="hero-bg-text">AL</span>
+      </div>
+    </section>
+
+    <!-- LOMITOS -->
+    <section class="carta-section">
+      <div class="carta-section-title">
+        <span class="section-label">01</span>
+        <h2>Lomitos</h2>
+      </div>
+      <div class="carta-items">
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Lomito Simple</h3>
+            <p>Bife de lomo, queso tybo, lechuga y tomate</p>
+          </div>
+          <span class="carta-precio">$10.300</span>
         </div>
-        
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Lomito Completo</h3>
+            <p>Bife de lomo, queso tybo, lechuga, tomate y huevo</p>
+          </div>
+          <span class="carta-precio">$10.400</span>
+        </div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Lomito de Pollo</h3>
+            <p>Bife de pechuga, queso tybo, lechuga, tomate y huevo</p>
+          </div>
+          <span class="carta-precio">$9.700</span>
+        </div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Lomito de Cerdo</h3>
+            <p>Bife de cerdo, queso tybo, lechuga, tomate y huevo</p>
+          </div>
+          <span class="carta-precio">$9.700</span>
+        </div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Lomito Vegano</h3>
+            <p>Doble huevo, queso tybo, lechuga y tomate</p>
+          </div>
+          <span class="carta-precio">$8.500</span>
+        </div>
+        <div class="carta-item">
+          <div class="carta-item-left">
+            <h3>Lomito SUPER</h3>
+            <p>Bife de lomo, queso tybo, lechuga, tomate, pimientos asados, ají y huevo</p>
+          </div>
+          <span class="carta-precio">$11.400</span>
+        </div>
+        <div class="carta-item carta-item--highlight">
+          <div class="carta-item-left">
+            <h3>Lomo Acosta <span class="badge-especial">Especial</span></h3>
+            <p>Doble bife de lomo, queso tybo, pimientos asados y queso roquefort</p>
+          </div>
+          <span class="carta-precio carta-precio--gold">$12.400</span>
+        </div>
+      </div>
+    </section>
 
-    </main>
-    <footer class="footer">
-        <ul class="social-icon">
-            <li class="icon-elem">
-                <a href="https://www.instagram.com/acostalomos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-            <li class="icon-elem">
-                <a href="https://www.facebook.com/lomos.acosta?mibextid=ZbWKwL" class="icon">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            
-        </ul>
-        <p class="text">Acosta Lomos</p>
-    </footer>
-    
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="section-divider"></div>
+
+    <!-- IMÁGENES -->
+    <div class="carta-fotos">
+      <div class="carta-foto">
+        <img src="../multimedia/lomostres.jpg" alt="Lomos Acosta" onerror="this.parentElement.style.display='none'">
+      </div>
+      <div class="carta-foto">
+        <img src="../multimedia/burgers.jpg" alt="Hamburguesas Acosta" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- PROMOCIONES -->
+    <section class="carta-section">
+      <div class="carta-section-title">
+        <span class="section-label">02</span>
+        <h2>Promociones</h2>
+      </div>
+      <div class="carta-items">
+        <div class="carta-item promo-item">
+          <div class="carta-item-left">
+            <h3>2 Lomos de Cerdo</h3>
+          </div>
+          <span class="carta-precio carta-precio--gold">$17.400</span>
+        </div>
+        <div class="carta-item promo-item">
+          <div class="carta-item-left">
+            <h3>2 Lomos de Ternera + 1 Gaseosa</h3>
+          </div>
+          <span class="carta-precio carta-precio--gold">$21.800</span>
+        </div>
+        <div class="carta-item promo-item">
+          <div class="carta-item-left">
+            <h3>2 Hamburguesas Completas</h3>
+            <p>Solo de lunes a miércoles</p>
+          </div>
+          <span class="carta-precio carta-precio--gold">$11.500</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="cta-content">
+        <h2>¿Ya elegiste?<br><span class="accent">Hacé tu pedido ahora.</span></h2>
+        <a href="./realizar pedido.html" class="btn-primary btn-large">Pedir ahora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">Acosta<span>Lomos</span></div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/acostalomos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://www.facebook.com/lomos.acosta?mibextid=ZbWKwL" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><ion-icon name="logo-facebook"></ion-icon></a>
+    </div>
+    <span class="footer-copy">© 2026 Acosta Lomos</span>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
 </body>
 </html>

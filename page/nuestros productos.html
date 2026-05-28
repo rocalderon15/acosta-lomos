@@ -1,117 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestros Productos - Acosta Lomos</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Productos — Acosta Lomos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
-    <header>
-        <img src="../multimedia/logodos.png" alt="logo de Acosta Lomos" class="logo">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nuestros productos.html">Nuestros Productos</a></li>
-                <li><a href="./nuestra carta.html">Nuestra Carta</a></li>
-                <li><a href="./donde nos encontramos.html">Dónde nos encontramos</a></li>
-                <li><a href="./realizar pedido.html">Realizar Pedido</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    
-    <main>
-        <h1>Nuestros Productos</h1>
-        <p>Descubre nuestra variedad de lomitos y hamburguesas preparados con los ingredientes más frescos y deliciosos.</p>
-        
-        <section class="productos">
-            <article class="producto">
-                <h2>Lomito Completo</h2>
-                <p>Inlcuye bife de lomo, queso tybo, lechuga, tomate y huevo. </p>
-                
-            </article>
 
-            <article class="producto">
-                <h2>Lomito Simple</h2>
-                <p>Incluye bife de lomo, queso tybo, lechuga y tomate</p>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="../index.html" class="logo">Acosta<span>Lomos</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./nuestros productos.html" class="active">Productos</a></li>
+        <li><a href="./nuestra carta.html">Nuestra carta</a></li>
+        <li><a href="./donde nos encontramos.html">Dónde estamos</a></li>
+      </ul>
+    </nav>
+    <a href="./realizar pedido.html" class="btn-pedido">Hacer pedido</a>
+    <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+  </header>
 
-            <article class="producto">
-                    <h2>Lomito de Pollo</h2>
-                    <p>Incluye bife de pechuga, queso tybo, lechuga, tomate y huevo</p>
-            </article>
+  <main>
 
-            <article class="producto">
-                <h2>Lomito de Cerdo</h2>
-                <p>Incluye bife de cerdo, queso tybo, lechuga, tomate y huevo</p>
-            </article>
+    <!-- PAGE HEADER -->
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <span class="tag">✦ Lo que hacemos</span>
+        <h1>Nuestros<br><span class="accent">Productos</span></h1>
+        <p class="hero-desc">Lomitos, hamburguesas y acompañamientos preparados con los ingredientes más frescos. Cada plato, con dedicación.</p>
+      </div>
+      <div class="page-hero-deco">
+        <span class="hero-bg-text">AL</span>
+      </div>
+    </section>
 
-            <article class="producto">
-                <h2>Lomito SUPER</h2>
-                <p>Incluye bife de lomo, queso tybo, lechuga, tomate, pimientos asados, aji y huevo</p>
-            </article>
+    <!-- LOMITOS -->
+    <section class="productos-section">
+      <div class="productos-header">
+        <span class="section-label">Categoría 01</span>
+        <h2>Lomitos</h2>
+      </div>
+      <div class="productos-grid">
 
-            <article class="producto">
-                <h2>Lomo Acosta</h2>
-                <p>Incluye doble bife de lomo, queso tybo, pimientos asados y queso roquefort</p>
-            </article>
+        <article class="producto-card featured">
+          <span class="prod-emoji">🥩</span>
+          <div class="prod-body">
+            <h3>Lomo Acosta</h3>
+            <p>Doble bife de lomo, queso tybo, pimientos asados y queso roquefort. La estrella de la casa.</p>
+            <span class="prod-tag-especial">Especial</span>
+          </div>
+        </article>
 
-            <article class="producto">
-                <h2>Lomito Vegano</h2>
-                <p>Incluye doble huevo, queso tybo, lechuga y tomate</p>
-                
-            </article>
+        <article class="producto-card">
+          <span class="prod-emoji">🥪</span>
+          <div class="prod-body">
+            <h3>Lomito Completo</h3>
+            <p>Bife de lomo, queso tybo, lechuga, tomate y huevo.</p>
+          </div>
+        </article>
 
-            <article class="producto">
-                <h2>Hamburguesa Completa</h2>
-                <p>Incluye medallon de carne 120g, queso cheddar, tomate, lechuga y huevo.</p>
-                
-            </article>
-            <article class="producto">
-                <h2>Hamburguesa Bacon</h2>
-                <p>Incluye medallon de carne 120g, queso cheddar, cebolla morada salteada, bacon y huevo.</p>
-                
-            </article>
-            <article class="producto">
-                <h2>Papas Baston</h2>
-                <p>Crujientes papas fritas, perfectas como acompañamiento de cualquiera de nuestros lomitos.</p>
-                
-            </article>
-            <article class="producto">
-                <h2>Papas con huevo</h2>
-                
-            </article>
-            <article class="producto">
-                <h2>Papas con cheddar</h2>
-                
-            </article>
-            <article class="producto">
-                <h2>Papas Bravas</h2>
-                
-            </article>
+        <article class="producto-card">
+          <span class="prod-emoji">🥪</span>
+          <div class="prod-body">
+            <h3>Lomito Simple</h3>
+            <p>Bife de lomo, queso tybo, lechuga y tomate.</p>
+          </div>
+        </article>
 
+        <article class="producto-card">
+          <span class="prod-emoji">🍗</span>
+          <div class="prod-body">
+            <h3>Lomito de Pollo</h3>
+            <p>Bife de pechuga, queso tybo, lechuga, tomate y huevo.</p>
+          </div>
+        </article>
 
-        </section>
-    </main>
-    <footer class="footer">
-        <ul class="social-icon">
-            <li class="icon-elem">
-                <a href="https://www.instagram.com/acostalomos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-            <li class="icon-elem">
-                <a href="https://www.facebook.com/lomos.acosta?mibextid=ZbWKwL" class="icon">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            
-        </ul>
-        <p class="text">Acosta Lomos</p>
-    </footer>
-    
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <article class="producto-card">
+          <span class="prod-emoji">🐷</span>
+          <div class="prod-body">
+            <h3>Lomito de Cerdo</h3>
+            <p>Bife de cerdo, queso tybo, lechuga, tomate y huevo.</p>
+          </div>
+        </article>
+
+        <article class="producto-card">
+          <span class="prod-emoji">🌶️</span>
+          <div class="prod-body">
+            <h3>Lomito SUPER</h3>
+            <p>Bife de lomo, queso tybo, lechuga, tomate, pimientos asados, ají y huevo.</p>
+          </div>
+        </article>
+
+        <article class="producto-card">
+          <span class="prod-emoji">🌱</span>
+          <div class="prod-body">
+            <h3>Lomito Vegano</h3>
+            <p>Doble huevo, queso tybo, lechuga y tomate.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DIVISOR -->
+    <div class="section-divider"></div>
+
+    <!-- HAMBURGUESAS -->
+    <section class="productos-section">
+      <div class="productos-header">
+        <span class="section-label">Categoría 02</span>
+        <h2>Hamburguesas</h2>
+      </div>
+      <div class="productos-grid">
+
+        <article class="producto-card">
+          <span class="prod-emoji">🍔</span>
+          <div class="prod-body">
+            <h3>Hamburguesa Completa</h3>
+            <p>Medallón de carne 120g, queso cheddar, tomate, lechuga y huevo.</p>
+          </div>
+        </article>
+
+        <article class="producto-card">
+          <span class="prod-emoji">🥓</span>
+          <div class="prod-body">
+            <h3>Hamburguesa Bacon</h3>
+            <p>Medallón de carne 120g, queso cheddar, cebolla morada salteada, bacon y huevo.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DIVISOR -->
+    <div class="section-divider"></div>
+
+    <!-- PAPAS -->
+    <section class="productos-section">
+      <div class="productos-header">
+        <span class="section-label">Categoría 03</span>
+        <h2>Acompañamientos</h2>
+      </div>
+      <div class="productos-grid productos-grid--4">
+
+        <article class="producto-card">
+          <span class="prod-emoji">🍟</span>
+          <div class="prod-body">
+            <h3>Papas Bastón</h3>
+            <p>Crujientes papas fritas, perfectas para acompañar cualquier lomito.</p>
+          </div>
+        </article>
+
+        <article class="producto-card">
+          <span class="prod-emoji">🍳</span>
+          <div class="prod-body">
+            <h3>Papas con Huevo</h3>
+          </div>
+        </article>
+
+        <article class="producto-card">
+          <span class="prod-emoji">🧀</span>
+          <div class="prod-body">
+            <h3>Papas con Cheddar</h3>
+          </div>
+        </article>
+
+        <article class="producto-card">
+          <span class="prod-emoji">🌶️</span>
+          <div class="prod-body">
+            <h3>Papas Bravas</h3>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="cta-content">
+        <h2>¿Ya elegiste?<br><span class="accent">Hacé tu pedido ahora.</span></h2>
+        <a href="./realizar pedido.html" class="btn-primary btn-large">Pedir ahora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">Acosta<span>Lomos</span></div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/acostalomos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://www.facebook.com/lomos.acosta?mibextid=ZbWKwL" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+    </div>
+    <span class="footer-copy">© 2026 Acosta Lomos</span>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+
 </body>
 </html>

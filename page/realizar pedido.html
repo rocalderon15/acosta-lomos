@@ -1,75 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realizar Pedido - Acosta Lomos</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realizar Pedido — Acosta Lomos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <img src="../multimedia/logodos.png" alt="logo de Acosta Lomos" class="logo">
-        
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nuestros productos.html">Nuestros productos</a></li>
-                <li><a href="./nuestra carta.html">Nuestra carta</a></li>
-                <li><a href="./donde nos encontramos.html">Dónde nos encontramos</a></li>
-                <li><a href="./realizar pedido.html" class="active">Realizar pedido</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="pedido">
-            <h1>Realiza pedido</h1>
-            <p>Completa el siguiente formulario para realizar tu pedido:</p>
-            <form class="pedido-form" action="#" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
-                
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Telefono de contacto" required>
-                
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" placeholder="A dónde lo queres enviar" required>
-                
-                <label for="pedido">Detalla lo que queres pedir:</label>
-                <textarea id="pedido" name="pedido" placeholder="Detalle del pedido" required></textarea>
-                
-                <label for="metodo-pago">Método de Pago:</label>
-                <select id="metodo-pago" name="metodo-pago" required>
-                    <option value="" disabled selected>Selecciona un método</option>
-                    <option value="efectivo">Efectivo</option>
-                    <option value="tarjeta">Tarjeta</option>
-                    <option value="transferencia">Transferencia</option>
-                </select>
-                
-                <button type="submit">Enviar Pedido</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <ul class="social-icon">
-            <li class="icon-elem">
-                <a href="https://www.instagram.com/acostalomos" class="icon">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-            <li class="icon-elem">
-                <a href="https://www.facebook.com/lomos.acosta" class="icon">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            
-        </ul>
-        <p class="text">Acosta Lomos</p>
-    </footer>
-    
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <header class="navbar">
+    <a href="../index.html" class="logo">Acosta<span>Lomos</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./nuestros productos.html">Productos</a></li>
+        <li><a href="./nuestra carta.html">Nuestra carta</a></li>
+        <li><a href="./donde nos encontramos.html">Dónde estamos</a></li>
+      </ul>
+    </nav>
+    <a href="./realizar pedido.html" class="btn-pedido active-nav">Hacer pedido</a>
+    <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+  </header>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <section class="page-hero page-hero--short">
+      <div class="page-hero-content">
+        <span class="tag">✦ Rápido y fácil</span>
+        <h1>Realizá tu<br><span class="accent">Pedido</span></h1>
+        <p class="hero-desc">Completá el formulario y nos ponemos en contacto. Delivery a domicilio en Córdoba.</p>
+      </div>
+      <div class="page-hero-deco">
+        <span class="hero-bg-text">AL</span>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="pedido-section">
+
+      <div class="pedido-lateral">
+        <span class="section-label">¿Necesitás ayuda?</span>
+        <h2>Antes de pedir,<br>mirá la carta.</h2>
+        <p>Si no sabés qué elegir, revisá nuestro menú completo con todos los precios.</p>
+        <a href="./nuestra carta.html" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Ver carta completa</a>
+
+        <div class="pedido-tips">
+          <div class="tip">
+            <span class="tip-num">01</span>
+            <p>Completá tus datos de contacto</p>
+          </div>
+          <div class="tip">
+            <span class="tip-num">02</span>
+            <p>Detallá lo que querés pedir</p>
+          </div>
+          <div class="tip">
+            <span class="tip-num">03</span>
+            <p>Elegí tu método de pago</p>
+          </div>
+          <div class="tip">
+            <span class="tip-num">04</span>
+            <p>¡Listo! Nos contactamos pronto</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pedido-form-wrapper">
+        <form class="pedido-form" action="#" method="POST">
+
+          <div class="form-group">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 351 123 4567" required>
+          </div>
+
+          <div class="form-group">
+            <label for="direccion">Dirección de entrega</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Calle, número, barrio" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pedido">Detalle del pedido</label>
+            <textarea id="pedido" name="pedido" placeholder="Ej: 1 Lomo Acosta, 1 Lomito Completo sin huevo, 2 papas bastón..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="metodo-pago">Método de pago</label>
+            <select id="metodo-pago" name="metodo-pago" required>
+              <option value="" disabled selected>Seleccioná un método</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="tarjeta">Tarjeta</option>
+              <option value="transferencia">Transferencia</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar pedido →</button>
+
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">Acosta<span>Lomos</span></div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/acostalomos" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://www.facebook.com/lomos.acosta" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><ion-icon name="logo-facebook"></ion-icon></a>
+    </div>
+    <span class="footer-copy">© 2026 Acosta Lomos</span>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    document.querySelector('.pedido-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = document.querySelector('.btn-submit');
+      btn.textContent = '¡Pedido enviado! ✓';
+      btn.style.background = '#1a1a1a';
+      btn.style.color = '#FFD600';
+      btn.disabled = true;
+    });
+  </script>
 </body>
 </html>
-

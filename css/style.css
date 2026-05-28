@@ -703,3 +703,639 @@ blockquote {
     text-align: center;
   }
 }
+
+
+/* ===========================
+   PÁGINAS INTERNAS
+   =========================== */
+
+/* --- LOGO COMO LINK --- */
+a.logo {
+  text-decoration: none;
+}
+
+/* --- ACTIVE NAV --- */
+.nav-links a.active {
+  color: var(--amarillo);
+}
+.btn-pedido.active-nav {
+  background: var(--negro);
+  color: var(--amarillo);
+  border: 1px solid var(--amarillo);
+}
+
+/* --- PAGE HERO --- */
+.page-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 52vh;
+  border-bottom: 1px solid var(--negro-3);
+}
+
+.page-hero--short {
+  min-height: 42vh;
+}
+
+.page-hero-content {
+  padding: 4.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  border-right: 1px solid var(--negro-3);
+}
+
+.page-hero-content h1 {
+  font-family: var(--font-title);
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  line-height: 0.92;
+  color: var(--texto);
+  letter-spacing: 0.02em;
+}
+
+.page-hero-deco {
+  background: var(--negro-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* --- SECTION DIVIDER --- */
+.section-divider {
+  height: 1px;
+  background: var(--negro-3);
+  margin: 0;
+}
+
+/* ===========================
+   PRODUCTOS
+   =========================== */
+.productos-section {
+  padding: 4rem 3rem;
+  border-bottom: 1px solid var(--negro-3);
+}
+
+.productos-header {
+  margin-bottom: 2.5rem;
+}
+
+.productos-header h2 {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  color: var(--texto);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--negro-3);
+}
+
+.productos-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.producto-card {
+  background: var(--negro);
+  padding: 2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: background 0.2s;
+  position: relative;
+}
+
+.producto-card:hover {
+  background: var(--negro-2);
+}
+
+.producto-card.featured {
+  background: var(--negro-2);
+  border-left: 3px solid var(--amarillo);
+}
+
+.producto-card.featured:hover {
+  background: #161616;
+}
+
+.prod-emoji {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.prod-body h3 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: var(--texto);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.prod-body p {
+  font-size: 0.82rem;
+  color: var(--texto-dim);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.prod-tag-especial {
+  display: inline-block;
+  background: var(--amarillo);
+  color: var(--negro);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  margin-top: 0.6rem;
+}
+
+/* ===========================
+   CARTA
+   =========================== */
+.carta-section {
+  padding: 4rem 3rem;
+}
+
+.carta-section-title {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--negro-3);
+}
+
+.carta-section-title h2 {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  color: var(--texto);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.carta-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.carta-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid var(--negro-3);
+  gap: 2rem;
+  transition: background 0.15s;
+}
+
+.carta-item:last-child {
+  border-bottom: none;
+}
+
+.carta-item--highlight {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 -1rem;
+  border-left: 3px solid var(--amarillo);
+  background: rgba(255, 214, 0, 0.03);
+}
+
+.promo-item {
+  background: rgba(255, 214, 0, 0.03);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 -1rem;
+}
+
+.carta-item-left h3 {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: var(--texto);
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.badge-especial {
+  display: inline-block;
+  background: var(--amarillo);
+  color: var(--negro);
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  vertical-align: middle;
+}
+
+.carta-item-left p {
+  font-size: 0.82rem;
+  color: var(--texto-dim);
+  margin-top: 0.25rem;
+  font-weight: 300;
+}
+
+.carta-precio {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: var(--texto-muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.carta-precio--gold {
+  color: var(--amarillo);
+}
+
+.carta-fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 320px;
+}
+
+.carta-foto {
+  overflow: hidden;
+  background: var(--negro-2);
+}
+
+.carta-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: opacity 0.3s, transform 0.4s;
+}
+
+.carta-foto:hover img {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* ===========================
+   UBICACIÓN
+   =========================== */
+.ubicacion-section {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  min-height: 520px;
+  border-bottom: 1px solid var(--negro-3);
+}
+
+.ubicacion-info {
+  padding: 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  border-right: 1px solid var(--negro-3);
+}
+
+.info-block h2 {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  color: var(--texto);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  margin-top: 0.5rem;
+}
+
+.info-block p {
+  color: var(--texto-muted);
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 0.7rem;
+  line-height: 1.7;
+}
+
+.info-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dato {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--borde);
+  transition: border-color 0.2s;
+}
+
+.dato:hover {
+  border-color: var(--amarillo);
+}
+
+.dato-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.dato strong {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amarillo);
+  margin-bottom: 0.2rem;
+}
+
+.dato p {
+  font-size: 0.88rem;
+  color: var(--texto-muted);
+  font-weight: 300;
+}
+
+.mapa-wrapper {
+  height: 100%;
+  min-height: 420px;
+  overflow: hidden;
+  filter: grayscale(80%) contrast(1.1);
+  transition: filter 0.4s;
+}
+
+.mapa-wrapper:hover {
+  filter: grayscale(30%) contrast(1.05);
+}
+
+/* ===========================
+   PEDIDO / FORMULARIO
+   =========================== */
+.pedido-section {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  border-bottom: 1px solid var(--negro-3);
+}
+
+.pedido-lateral {
+  padding: 4rem 3rem;
+  border-right: 1px solid var(--negro-3);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.pedido-lateral h2 {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+  color: var(--texto);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+}
+
+.pedido-lateral > p {
+  color: var(--texto-muted);
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.pedido-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--negro-3);
+}
+
+.tip-num {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  color: var(--amarillo);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.tip p {
+  font-size: 0.85rem;
+  color: var(--texto-muted);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.pedido-form-wrapper {
+  padding: 4rem 3.5rem;
+}
+
+.pedido-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 560px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--texto-muted);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  background: var(--negro-2);
+  border: 1px solid var(--borde);
+  color: var(--texto);
+  padding: 0.9rem 1.1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 300;
+  outline: none;
+  transition: border-color 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #444;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--amarillo);
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-group select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23555' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-group select option {
+  background: var(--negro-2);
+  color: var(--texto);
+}
+
+.btn-submit {
+  background: var(--amarillo);
+  color: var(--negro);
+  padding: 1rem 2.5rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  align-self: flex-start;
+}
+
+.btn-submit:hover {
+  background: var(--amarillo-hover);
+  transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+  cursor: default;
+  transform: none;
+}
+
+/* ===========================
+   RESPONSIVE — PÁGINAS INTERNAS
+   =========================== */
+@media (max-width: 900px) {
+
+  .page-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .page-hero-content {
+    padding: 3rem 1.5rem;
+    border-right: none;
+    border-bottom: 1px solid var(--negro-3);
+  }
+
+  .page-hero-deco {
+    display: none;
+  }
+
+  /* Productos */
+  .productos-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .productos-grid--4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Carta */
+  .carta-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .carta-fotos {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .carta-foto {
+    height: 220px;
+  }
+
+  .carta-section-title {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  /* Ubicación */
+  .ubicacion-section {
+    grid-template-columns: 1fr;
+  }
+
+  .ubicacion-info {
+    padding: 2.5rem 1.5rem;
+    border-right: none;
+    border-bottom: 1px solid var(--negro-3);
+  }
+
+  .mapa-wrapper {
+    min-height: 300px;
+  }
+
+  /* Pedido */
+  .pedido-section {
+    grid-template-columns: 1fr;
+  }
+
+  .pedido-lateral {
+    padding: 2.5rem 1.5rem;
+    border-right: none;
+    border-bottom: 1px solid var(--negro-3);
+  }
+
+  .pedido-form-wrapper {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+    align-self: stretch;
+  }
+
+  /* Carta items mobile */
+  .carta-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .carta-precio {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .productos-grid--4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
