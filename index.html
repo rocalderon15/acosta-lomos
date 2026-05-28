@@ -1,60 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Acosta Lomos</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acosta Lomos — El mejor lomito de la ciudad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="multimedia/logodos.png" alt="logo de Acosta Lomos" class="logo">
-        
-        <nav>
-            <ul>
-                <li><a href="./page/nuestros productos.html">Nuestros productos</a></li>
-                <li><a href="./page/nuestra carta.html">Nuestra carta</a></li>
-                <li><a href="./page/donde nos encontramos.html">Dónde nos encontramos</a></li>
-                <li><a href="./page/realizar pedido.html">Realizar pedido</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    
-    <main>
-        <section class="intro">
-            <h1>UN POCO DE NOSOTROS</h1>
-            <img src="multimedia/estructura.jpg" alt="imagen del lugar" class="featured-image">
-            <b> <p>Acosta Lomos nació del sueño y la pasión compartida de dos hermanos, Iván y Cristian, quienes, además de ser amantes de los lomitos, han convertido su dedicación en una experiencia culinaria única. Trabajando codo a codo, cada uno de sus platos es una expresión de su compromiso con la calidad, el sabor y la satisfacción de sus clientes.</p> </b>
-            <b> <p>En Acosta Lomos, creemos que un buen lomito no es solo un plato, sino un momento de disfrute. Por eso, ponemos el corazón en cada preparación, cuidando cada detalle para ofrecerte la mejor experiencia gastronómica. Desde los ingredientes frescos y seleccionados hasta el toque especial que distingue cada bocado, cada lomito es una invitación a disfrutar y compartir.</p> </b>
-            <b> <p>Te invitamos a ser parte de esta pasión, a probar nuestros lomitos y descubrir el sabor y la dedicación que Iván y Cristian han puesto en cada plato. En Acosta Lomos, más que comida, ofrecemos momentos únicos de sabor y calidad para quienes buscan lo mejor.</p> </b>
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <ul class="social-icon">
-            <li class="icon-elem">
-                <a href="https://www.instagram.com/acostalomos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-            </li>
-            <li class="icon-elem">
-                <a href="https://www.facebook.com/lomos.acosta?mibextid=ZbWKwL" class="icon">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            
 
-        </ul>
-        <p class="text">Acosta Lomos</p>
-    </footer>
-    
-    
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Acosta<span>Lomos</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./page/nuestros productos.html">Productos</a></li>
+        <li><a href="./page/nuestra carta.html">Nuestra carta</a></li>
+        <li><a href="./page/donde nos encontramos.html">Dónde estamos</a></li>
+      </ul>
+    </nav>
+    <a href="./page/realizar pedido.html" class="btn-pedido">Hacer pedido</a>
+    <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <span class="tag">✦ Córdoba, Argentina</span>
+        <h1>
+          El mejor
+          <span class="accent">lomito</span>
+          de la ciudad.
+        </h1>
+        <p class="hero-desc">
+          Iván y Cristian pusieron el corazón en cada bocado. Ingredientes frescos, toque artesanal y sabor que queda.
+        </p>
+        <div class="hero-btns">
+          <a href="./page/realizar pedido.html" class="btn-primary">Hacer pedido</a>
+          <a href="#nosotros" class="btn-secondary">Nuestra historia</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <span class="hero-bg-text">AL</span>
+        <img src="multimedia/estructura.jpg" alt="Acosta Lomos local" class="hero-img" onerror="this.style.display='none'">
+        <div class="hero-badge">
+          <span class="badge-big">100%</span>
+          <span class="badge-small">Sabor<br>artesanal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Hermanos detrás de cada plato</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Sabor en cada bocado</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1°</span>
+        <span class="stat-label">Elección de nuestros clientes</span>
+      </div>
+    </div>
+
+    <!-- HISTORIA -->
+    <section class="story" id="nosotros">
+      <div class="story-img">
+        <span class="story-bg">☆</span>
+        <img src="multimedia/logodos.png" alt="Logo Acosta Lomos" class="story-logo" onerror="this.style.display='none'">
+      </div>
+      <div class="story-content">
+        <span class="section-label">Un poco de nosotros</span>
+        <h2>Nacimos del sueño de dos hermanos.</h2>
+        <blockquote>
+          "Cada lomito es una expresión de nuestro compromiso con la calidad y el sabor."
+        </blockquote>
+        <p>
+          Acosta Lomos nació de la <strong>pasión compartida de Iván y Cristian</strong>, quienes convirtieron su amor por los lomitos en una experiencia culinaria única. Trabajando codo a codo, cuidando cada detalle — desde los ingredientes frescos hasta el toque especial que distingue cada bocado.
+        </p>
+        <p>
+          En Acosta Lomos, creemos que un buen lomito no es solo un plato, sino <strong>un momento de disfrute</strong>. Por eso ponemos el corazón en cada preparación.
+        </p>
+        <p>
+          Más que comida, ofrecemos <strong>momentos únicos de sabor y calidad</strong> para quienes buscan lo mejor.
+        </p>
+      </div>
+    </section>
+
+    <!-- MENÚ PREVIEW -->
+    <section class="menu-section">
+      <div class="menu-header">
+        <div>
+          <span class="section-label">Lo que hacemos</span>
+          <h2>Nuestra carta</h2>
+        </div>
+        <a href="./page/nuestra carta.html" class="btn-secondary">Ver todo el menú</a>
+      </div>
+      <div class="menu-cards">
+        <a href="./page/nuestra carta.html" class="menu-card">
+          <span class="card-emoji">🥪</span>
+          <div class="card-name">Lomito Clásico</div>
+          <p class="card-desc">Lomo tierno, pan artesanal, lechuga, tomate y nuestra salsa especial.</p>
+          <span class="card-arrow">→</span>
+        </a>
+        <a href="./page/nuestra carta.html" class="menu-card">
+          <span class="card-emoji">🧀</span>
+          <div class="card-name">Lomito Completo</div>
+          <p class="card-desc">Con queso derretido, jamón, huevo frito y todo lo que lo hace especial.</p>
+          <span class="card-arrow">→</span>
+        </a>
+        <a href="./page/nuestra carta.html" class="menu-card">
+          <span class="card-emoji">🌶️</span>
+          <div class="card-name">Lomito Picante</div>
+          <p class="card-desc">Con chimichurri picante, jalapeños y lomo a punto. Para los valientes.</p>
+          <span class="card-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="cta-content">
+        <h2>¿Tenés hambre?<br><span class="accent">Hacé tu pedido ahora.</span></h2>
+        <a href="./page/realizar pedido.html" class="btn-primary btn-large">Pedir ahora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">Acosta<span>Lomos</span></div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/acostalomos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://www.facebook.com/lomos.acosta?mibextid=ZbWKwL" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+    </div>
+    <span class="footer-copy">© 2026 Acosta Lomos</span>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
 </body>
 </html>
-
